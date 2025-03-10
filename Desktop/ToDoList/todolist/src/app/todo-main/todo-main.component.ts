@@ -44,4 +44,12 @@ export class TodoMainComponent {
     console.log("working")
     this.list = this.list.filter((val)=>val.id !=id)
   }
+
+  edititem(item: Todo) {
+    console.log("working")
+    this.task = item.title;
+    this.remove(item.id); 
+  }
+
+ 
 }
